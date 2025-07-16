@@ -4,8 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>practice</title>
+    <style>
+         .container{
+            border: 1px solid black;
+            height: 500px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+         }
+
+         .box{
+            border: 2px dotted mediumorchid;
+            height: 200px;
+            width: 200px;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         }
+
+         #flex-box-heading{
+            font-size: 2em;
+         }
+
+         .nav-container{
+            display: flex;
+            justify-content: space-between;
+            margin: 0px 100px;
+            font-size: 20px;
+            /* background-color: aqua; */
+            
+            
+         }
+
+         header{
+            justify-content: space-between;
+         }
+
+         .nav-container a{
+            text-decoration: none;
+            color: black;
+            
+         }
+
+         .kafi{
+            display: flex;
+            justify-content:space-evenly;
+         }
+
+         .nav-container div {
+            display: flex;
+            gap: 30px;
+        } 
+
+        .login-from{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+        }
+
+        .login-from input{
+            margin: 5px;
+        }
+
+         .login-from-container{
+            display: flex;
+            justify-content: center;
+         }
+    </style>
 </head>
 <body>
-    
+     <header>
+        <nav class="nav-container">
+            <div >
+                <a href="">Home</a>
+                <a href="">Profile</a>
+                <a href="">Blog</a>
+                <a href="">about</a>
+                <a href="">Contact</a>
+               
+            </div>   
+             <a href=""><button>Log In</button></a> 
+        </nav>
+
+        <section class="login-from-container">
+            <form class="login-from">
+            <input type="text" placeholder="input your name">
+            <input type="email" placeholder="input your email">
+            <input type="submit" value="log in">
+        </form>
+        </section>
+     </header>
+
+    <h1 id="flex-box-heading">Flex box container</h1>
+    <div class="container">
+        <div class="box">box-1</div>
+        <div class="box">box-2</div>
+        <div class="box">box-3</div>
+        <div class="box">box-4</div>
+        <div class="box">box-5</div>
+        <div class="box">box-6</div>
+        <div class="box">box-7</div>
+        <div class="box">box-8</div>
+        <div class="box">box-9</div>
+        <div class="box">box-10</div>
+        <div class="box">box-11</div>
+        <div class="box">box-12</div>
+    </div>
 </body>
 </html>
